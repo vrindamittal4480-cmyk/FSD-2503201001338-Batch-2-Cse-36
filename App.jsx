@@ -1,16 +1,15 @@
-import { Footer } from "./components/footer";
-import  Header  from "./components/header";
-import { About, Contact } from "./components/info";
-
-export function App(){
+import{useState} from "react";
+function App(){
+  const[name,setName]=useState("Rahul");
+  const[age,setAge]=useState(20);
   return(
-    <div  style={{ padding: "20px",fontFamily:"Arial"}}>
-      <h1>Import and Export Components Example</h1>
+    <div>
+      <h2>Name:{name}</h2>
+      <h2>Age: {age}</h2>
+      <button onClick={() => setName("Amit")}>Change Name</button>
+      <button onClick={() => setAge(age+1)}>Increase Age</button>
 
-     <Header/>
-     <About/>
-     <Contact/>
-     <Footer/>
     </div>
   );
 }
+export default App;
