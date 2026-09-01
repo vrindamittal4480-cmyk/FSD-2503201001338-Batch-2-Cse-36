@@ -1,6 +1,11 @@
+import Welcome from "./Welcome";
+
 function App(){
-  return (
-    <h1>Hello World from React using vite</h1>
+  return(
+    <div>
+      <h1>Main App Component</h1>
+      <Welcome/>
+    </div>
   );
 }
 export default App;
