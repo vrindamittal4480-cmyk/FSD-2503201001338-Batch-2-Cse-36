@@ -1,16 +1,16 @@
-function App() {
-  const username="Vrinda";
-  let x=10;
-  let y=20;
+import { Footer } from "./components/footer";
+import  Header  from "./components/header";
+import { About, Contact } from "./components/info";
 
-  return (
-    <>
-    <h1>{username}</h1>
-    <h1>{10+20+30}</h1>
-    <h1>{x+y}</h1>
-    <button onClick={()=>alert("Hello")}>Click Me</button>
-    </>
-  )
+export function App(){
+  return(
+    <div  style={{ padding: "20px",fontFamily:"Arial"}}>
+      <h1>Import and Export Components Example</h1>
+
+     <Header/>
+     <About/>
+     <Contact/>
+     <Footer/>
+    </div>
+  );
 }
-
-export default App;
